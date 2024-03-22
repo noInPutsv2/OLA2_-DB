@@ -8,11 +8,11 @@ The command for running the backend is "node server.mjs". (Must be runned inside
 ```docker network create mongoCluster```
 
 ### Starting the MongoDB Instances
-```docker run -d --rm -p 27017:27017 --name mongo1 --network mongoCluster mongo:5 mongod --replSet myReplicaSet --bind_ip localhost,mongo1```
+```docker run -d --rm -p 27017:27017 --name mongo1 --network mongoCluster mongo:5 mongod --replSet myReplicaSet --shardsvr --bind_ip localhost,mongo1```
 
-```docker run -d --rm -p 27018:27017 --name mongo2 --network mongoCluster mongo:5 mongod --replSet myReplicaSet --bind_ip localhost,mongo2```
+```docker run -d --rm -p 27018:27017 --name mongo2 --network mongoCluster mongo:5 mongod --replSet myReplicaSet --shardsvr --bind_ip localhost,mongo2```
 
-```docker run -d --rm -p 27019:27017 --name mongo3 --network mongoCluster mongo:5 mongod --replSet myReplicaSet --bind_ip localhost,mongo3```
+```docker run -d --rm -p 27019:27017 --name mongo3 --network mongoCluster mongo:5 mongod --replSet myReplicaSet --shardsvr --bind_ip localhost,mongo3```
 
 
 ### Initiate the Replica Set
