@@ -31,4 +31,9 @@ We are using MongoDB Compass to populate our data into our database. This is don
 
 ### Creating the database
 Inside MongoDB Compass we're adding a new database, giving it a name and creating collections named after the spreadsheets. 
+
 ![alt text](https://github.com/noInPutsv2/OLA2_-DB/blob/main/opret_database.png?raw=true)
+
+Once the collections are created we added the data from the spreadsheets into the collections, with MongoDb compass add data function. 
+
+![alt text](https://github.com/noInPutsv2/OLA2_-DB/blob/main/import_data.png?raw=true)
