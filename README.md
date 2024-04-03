@@ -26,4 +26,5 @@ docker exec -it mongo1 mongosh --eval "rs.initiate({
  ]
 })"
 ```
-
+### Populating data
+We are using MongoDB Compass to populate our data into our database. This is done by connection to primary replica, and uploading the documents. 
