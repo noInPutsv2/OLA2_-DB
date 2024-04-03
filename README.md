@@ -28,3 +28,7 @@ docker exec -it mongo1 mongosh --eval "rs.initiate({
 ```
 ### Populating data
 We are using MongoDB Compass to populate our data into our database. This is done by connection to primary replica, and uploading the documents. 
+
+### Creating the database
+Inside MongoDB Compass we're adding a new database, giving it a name and creating collections named after the spreadsheets. 
+![alt text](https://github.com/noInPutsv2/OLA2_-DB/blob/main/opret_database.png?raw=true)
